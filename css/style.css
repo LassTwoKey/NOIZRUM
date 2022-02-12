@@ -560,6 +560,10 @@ body::after {
     align-items: start;
   }
 }
+.menu__item {
+  display: flex;
+  align-items: center;
+}
 .menu__link {
   color: #fff;
   letter-spacing: 0.05em;
@@ -569,6 +573,8 @@ body::after {
   position: relative;
   font-family: Bebas;
   transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
 }
 @media (any-hover: hover) {
   .menu__link:hover {
@@ -1564,6 +1570,11 @@ body::after {
 @media (max-width: 1340px) {
   .block-cases__image .cases-image-mobile {
     display: inline-block;
+  }
+}
+@media (max-width: 520px) {
+  .block-cases__image .cases-image-mobile {
+    width: 100%;
   }
 }
 .block-cases__title {
