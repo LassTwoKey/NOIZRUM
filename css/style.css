@@ -1503,12 +1503,12 @@ body::after {
     max-width: 230px;
   }
 }
-@media (max-width: 61.99875em) {
+@media (min-width: 520px) {
   .cases__block {
     flex: 0 1 50%;
   }
 }
-@media (max-width: 519px) {
+@media (max-width: 520px) {
   .cases__block {
     flex: 0 1 100%;
     max-width: 100%;
@@ -1573,8 +1573,17 @@ body::after {
   }
 }
 @media (max-width: 520px) {
-  .block-cases__image .cases-image-mobile {
+  .block-cases__image {
     width: 100%;
+    position: relative;
+    padding: 0px 0px 60% 0px;
+  }
+  .block-cases__image .cases-image-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 .block-cases__title {
